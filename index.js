@@ -1,13 +1,14 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./data /db";
+import connectDB from "./data/db.js";
+import movies from "./routes/movies.js"
 
 dotenv.config();
 
 const app = express();
 const PORT = 3000;
 
-
+app.set('view engine', 'ejs');
 
 app.use(express.json()); //register express built in json
 
@@ -17,11 +18,14 @@ app.use(express.urlencoded({ // lets you reaad from data in req.body
 
 app.use('/static', express.static("public"));
 
-app.use("movies", )
+app.use("/movies", movies)
+
+
 
 app.get('/', (req, res) => {
-    res.render('test');
+    res.json('test');
 })
+
 
 
 app.listen(PORT, () => {
