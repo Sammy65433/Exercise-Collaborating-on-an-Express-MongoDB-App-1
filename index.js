@@ -18,13 +18,14 @@ app.use(express.urlencoded({ // lets you reaad from data in req.body
 
 app.use('/static', express.static("public"));
 
-app.use("movies", movies)
+app.use("/movies", movies)
 
 
 
 app.get('/', (req, res) => {
     res.json('test');
 })
+
 
 
 app.listen(PORT, () => {
