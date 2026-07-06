@@ -1,0 +1,18 @@
+{
+  "name": "exercise-collaborating-on-an-express-mongodb-app",
+  "version": "1.0.0",
+  "description": "exercises Exercise: Collaborating on an Express/MongoDB App Objective: Successfully set up, clone, branch, and collaborate on a Node.js/Express application with MongoDB without overwriting each other’s work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.7.3"
+  }
+}
