@@ -1,6 +1,8 @@
 exercises
-Exercise: Collaborating on an Express/MongoDB App
+**Exercise: Collaborating on an Express/MongoDB App**
 Objective: Successfully set up, clone, branch, and collaborate on a Node.js/Express application with MongoDB without overwriting each other’s work.
+
+Collab with team to setup github 
 
 **Step 1: Repository Setup**
 Who does this: One designated team member (The Driver).
