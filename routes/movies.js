@@ -1,5 +1,6 @@
 import express from "express";
-import {createMovie,
+import {
+        createMovie,
         getAllMovies,
         getMovieById,
         updateMovie,

@@ -38,7 +38,7 @@ export const updateMovie = async (req, res) => {
 export const deleteMovie = async (req, res) => {
   try {
     const deletedMovie = await Movie.findByIdAndDelete(req.params.id);
-    if (!deletedProduct) {
+    if (!deletedMovie) {
       return res.status(404).json({ message: "Product not found" });
     }
     res.status(200).json({ message: "Product successfully deleted" });
