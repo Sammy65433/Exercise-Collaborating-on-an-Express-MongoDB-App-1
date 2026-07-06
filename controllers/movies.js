@@ -27,7 +27,7 @@ export const getMovieById = async (req, res) => {
   }
 };
 
-export const updateProduct = async (req, res) => {
+export const updateMovie = async (req, res) => {
   try {
     res.status(200).json("your data");
   } catch (error) {
@@ -35,7 +35,7 @@ export const updateProduct = async (req, res) => {
   }
 };
 
-export const deleteProduct = async (req, res) => {
+export const deleteMovie = async (req, res) => {
   try {
     const deletedMovie = await Movie.findByIdAndDelete(req.params.id);
     if (!deletedProduct) {
