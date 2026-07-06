@@ -35,6 +35,10 @@ export const updateProduct = async (req, res) => {
 
 export const deleteProduct = async (req, res) => {
   try {
+    const deletedMovie = await Movie.findByIdAndDelete(req.params.id);
+    if (!deletedProduct) {
+      return res.status(404).json({ message: "Product not found" });
+    }
     res.status(200).json({ message: "Product successfully deleted" });
   } catch (error) {
     res.status(500).json({ message: error.message });
