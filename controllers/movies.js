@@ -22,8 +22,10 @@ export const getAllMovies = async (req, res) => {
 
 export const getMovieById = async (req, res) => {
   try {
+    let result = await Movie.findById(req.params.id);
 
-    res.status(200).json("your data");
+    if (!result) res.status(404).send('Not found');
+    else res.status(200).send(result);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
